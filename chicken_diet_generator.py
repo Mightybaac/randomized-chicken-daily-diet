@@ -64,7 +64,7 @@ def generate_chicken_diet():
     fat_requirement = 5
     vitamin_requirement = 17
 
-    total_weight = 100  # Total weight of the diet (assumed 100 grams for simplicity)
+    total_weight = 120  # Total weight of the diet (assumed 120 grams for simplicity)
 
     # Generate the diet by randomly selecting foods and adjusting weights to meet nutritional requirements
     remaining_weight = total_weight
