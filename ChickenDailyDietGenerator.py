@@ -49,10 +49,13 @@ def generate_chicken_diet():
 
 
     diet = {
-        "Grains": 0,
+                "Grains": 0,
         "Vegetables": 0,
         "Fruits": 0,
-        "Meat": 0
+        "Meat": 0,
+        "Dairy": 0,
+        "Insects": 0,
+        "Seafood": 0
     }
 
     # Calculate the nutritional requirements
@@ -70,7 +73,8 @@ def generate_chicken_diet():
         food = random.choice(foods)
 
         # Calculate the weight based on the nutritional requirements and the food's nutritional values
-        weight = min(remaining_weight, total_weight * food.nutritional_values["protein"] / protein_requirement,
+        weight = min(remaining_weight,
+                     total_weight * food.nutritional_values["protein"] / protein_requirement,
                      total_weight * food.nutritional_values["carbohydrates"] / carbohydrate_requirement,
                      total_weight * food.nutritional_values["fats"] / fat_requirement,
                      total_weight * food.nutritional_values["vitamins"] / vitamin_requirement)
