@@ -1,7 +1,6 @@
----
-# Chicken Daily Diet Generator
+# Chicken Diet Generator
 
-This Python program generates a randomized daily diet for chickens using store-bought food items. The diet is designed to meet the required nutritional values while considering the available food options and their nutritional content.
+This program generates a random chicken diet based on predefined food options and nutritional requirements. It calculates the weight of each food group to meet the specified protein, carbohydrate, fat, and vitamin requirements.
 
 ## Requirements
 
@@ -9,31 +8,30 @@ This Python program generates a randomized daily diet for chickens using store-b
 
 ## Usage
 
-1. Clone the repository or download the Python script.
+1. Clone the repository or download the code files.
 
-2. Run the script using the Python interpreter: `python chicken_diet_generator.py`.
+2. Run the `chicken_diet_generator.py` script using Python.
 
-3. The program will generate a random daily diet for chickens and display the weights of food groups.
+   ```bash
+   python chicken_diet_generator.py
 
-4. Modify the code to add or customize food options, adjust nutritional requirements, or make other changes as needed.
+3. The program will generate a random chicken diet and display the weight of each food group in grams.
+Code Overview
+The code consists of the following main components:
 
-## Code Explanation
+Food class: Represents a food item with its name, category, and nutritional values.
 
-The program uses the `random` module and a `Food` class to represent food items. Each food item has a name, category, and nutritional values. The available food options are defined as a list of `Food` objects.
+generate_chicken_diet function: Generates a random chicken diet based on predefined food options and nutritional requirements. It calculates the weight of each food group to meet the specified protein, carbohydrate, fat, and vitamin requirements.
 
-The `generate_chicken_diet()` function calculates the nutritional requirements and total weight of the diet. It then randomly selects food items and adjusts their weights to meet the nutritional requirements. The function returns a dictionary representing the daily diet with weights for each food group.
+main section: Executes the generate_chicken_diet function and prints the daily diet.
 
-The generated daily diet is printed to the console, displaying the weight of each food group in grams.
+Food options: Predefined list of foods with their nutritional values.
 
-## Customization
+Nutritional requirements: Defined protein, carbohydrate, fat, and vitamin requirements for a chicken diet.
 
-- To add or modify food options, create new `Food` objects with the desired name, category, and nutritional values. Add them to the `foods` list in the `generate_chicken_diet()` function.
+Customization
+To customize the program, you can modify the following:
 
-- Adjust the nutritional requirements by modifying the values of `protein_requirement`, `carbohydrate_requirement`, `fat_requirement`, and `vitamin_requirement` variables in the `generate_chicken_diet()` function.
+Add or remove food items in the foods list with their respective nutritional values.
 
-- Modify the total weight of the diet by changing the value of the `total_weight` variable in the `generate_chicken_diet()` function.
-
-## Disclaimer
-
-Please note that the provided nutritional values and percentages are for demonstration purposes only. Actual nutritional requirements for chickens may vary. It is recommended to consult with a poultry nutritionist or veterinarian to determine the accurate nutritional needs for your specific chickens.
-
+Adjust the nutritional requirements in the protein_requirement, carbohydrate_requirement, fat_requirement, and vitamin_requirement variables according to your desired diet goals.
