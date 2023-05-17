@@ -49,7 +49,7 @@ def generate_chicken_diet():
 
 
     diet = {
-                "Grains": 0,
+        "Grains": 0,
         "Vegetables": 0,
         "Fruits": 0,
         "Meat": 0,
